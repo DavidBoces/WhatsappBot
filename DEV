@@ -1,10 +1,22 @@
 <html>
    <head>
       <title>Whatsapp Bot Testing</title>
+      <!--CHAT DEPLOYMENT-->
       <script type='text/javascript' src='https://c.la2-c1cs-cdg.salesforceliveagent.com/content/g/js/51.0/deployment.js'></script>
       <script type='text/javascript'>
          liveagent.init('https://d.la2-c1cs-cdg.salesforceliveagent.com/chat', '5725E0000004D85', '00D5E00000091lt');
       </script>
+      <!--CHAT DEPLOYMENT-->
+      <!--EMBEDDED SERVICE-->
+      <style type='text/css'>
+         .embeddedServiceHelpButton .helpButton .uiButton {
+         background-color: #005290;
+         font-family: "Arial", sans-serif;
+         }
+         .embeddedServiceHelpButton .helpButton .uiButton:focus {
+         outline: 1px solid #005290;
+         }
+      </style>
       <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
       <script type='text/javascript'>
          var initESW = function(gslbBaseURL) {
@@ -57,15 +69,7 @@
          	initESW('https://service.force.com');
          }
       </script>
-      <style type='text/css'>
-         .embeddedServiceHelpButton .helpButton .uiButton {
-         background-color: #005290;
-         font-family: "Arial", sans-serif;
-         }
-         .embeddedServiceHelpButton .helpButton .uiButton:focus {
-         outline: 1px solid #005290;
-         }
-      </style>
+      <!--EMBEDDED SERVICE-->
    </head>
    <body>
       <br/><br/><br/>
@@ -75,18 +79,20 @@
          <h1 style="font-size: 26px;">Bienvenido a la p&aacute;gina de Soporte de SAVIA</h1>
       </center>
       <br/><br/><br/>
-      <table align="center">
-         <tr>
-            <td>
-               <a id="liveagent_button_online_5735E00000000Yj" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5735E00000000Yj')">
-               Online Chat Content
-               </a>
-               <div id="liveagent_button_offline_5735E00000000Yj" style="display: none;">
-                  Offline Chat Content
-               </div>
-            </td>
-         </tr>
-      </table>
+      <!--CHAT BUTTON-->
+      <a id="liveagent_button_online_5735E0000004DR4" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5735E0000004DR4')">
+         <!-- Online Chat Content -->
+      </a>
+      <div id="liveagent_button_offline_5735E0000004DR4" style="display: none;">
+         <!-- Offline Chat Content -->
+      </div>
+      <script type="text/javascript">
+         if (!window._laq) { window._laq = []; }
+         window._laq.push(function(){liveagent.showWhenOnline('5735E0000004DR4', document.getElementById('liveagent_button_online_5735E0000004DR4'));
+         liveagent.showWhenOffline('5735E0000004DR4', document.getElementById('liveagent_button_offline_5735E0000004DR4'));
+         });
+      </script>
+      <!--CHAT BUTTON-->
       <br/><br/><br/>
       <center>
          <h2 style="font-size: 14px;">Pulse sobre el icono para comenzar una conversaci&oacute;n con uno de nuestros agentes</h2>
