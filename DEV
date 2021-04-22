@@ -78,7 +78,6 @@
          <br/><br/><br/>
          <h1 style="font-size: 26px;">Bienvenido a la p&aacute;gina de Soporte de SAVIA</h1>
       </center>
-      <br/><br/><br/>
       <!--CHAT BUTTON-->
       <a id="liveagent_button_online_5735E0000004DR4" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5735E0000004DR4')">
          <!-- Online Chat Content -->
@@ -93,7 +92,6 @@
          });
       </script>
       <!--CHAT BUTTON-->
-      <br/><br/><br/>
       <center>
          <h2 style="font-size: 14px;">Pulse sobre el icono para comenzar una conversaci&oacute;n con uno de nuestros agentes</h2>
       </center>
